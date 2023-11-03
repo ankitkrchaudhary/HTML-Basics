@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <form ide"form">
+        <label for="userInput">ID:</label>
+
+        <input type="text" names"name" id="name">
+        <label for="userInput">Password:</label>
+        
+        <input type="password" names "password" id="password">
+        
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        const name = document.get ElementByID('name');
+        const password = document.get ElementByID('password');
+        const form = document.get ElementByID('form');
+
+        form.addEventListener('submit', onSubmit);
+
+        function onSubmit() {
+
+console.log('HEY'); 
+if (name.value.length < 3) { 
+    alert('Username is too short');
+    
+} else if(password.value.length < 8) {
+     alert('Password is too weak');
+
+}else if (password.value.length > 15) {
+    alert('password is too long') ;
+
+}
+}
+
+</script>
+</body>
+</html>
